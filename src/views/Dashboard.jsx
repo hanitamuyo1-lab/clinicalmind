@@ -2,8 +2,6 @@ import { Hoverable } from '../components/Hoverable.jsx';
 import { useProgress } from '../context/ProgressProvider.jsx';
 import { SYSTEMS, CONDS } from '../data/index.js';
 
-const LEARNER_NAME = 'Amara';
-
 function fallbackRecent() {
   return SYSTEMS.slice(0, 4).map(sys => ({
     name: (CONDS[sys.id] || [])[0]?.[0] || sys.name,
@@ -34,7 +32,7 @@ export function Dashboard({ onOpenCond, onGoTab }) {
         Welcome back
       </div>
       <h1 style={{ fontFamily: 'var(--serif)', fontSize: 38, lineHeight: 1.08, letterSpacing: '-.03em', margin: '0 0 8px' }}>
-        {greeting}, <span style={{ color: 'var(--teal-bright)' }}>{LEARNER_NAME}</span>
+        {greeting}
       </h1>
       <p style={{ fontSize: 14, color: 'rgba(194,240,234,.55)', margin: '0 0 26px', maxWidth: 520, lineHeight: 1.6 }}>
         You have <strong style={{ color: 'var(--white2)', fontWeight: 500 }}>{totalDueCards} flashcard{totalDueCards === 1 ? '' : 's'}</strong> due.
