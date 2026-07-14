@@ -1,0 +1,1 @@
+export const aboutStats = [{"value":"81","label":"Conditions covered"},{"value":"12","label":"Body systems"},{"value":"7","label":"Sections per condition"},{"value":"560+","label":"Flashcards & quiz questions"}];

@@ -1,0 +1,20 @@
+:root{
+  --black:#0a0e0d;--black2:#111815;--black3:#172220;
+  --teal:#0f6b5e;--teal-mid:#1a9080;--teal-bright:#25c4a8;
+  --teal-light:#7ae0cf;--teal-pale:#c2f0ea;
+  --green-mid:#27a05f;--green-bright:#36d472;
+  --white:#f0faf7;--white2:#e2f5ef;
+  --critical:#e85d5d;--high:#e8a84a;--mod:#36d472;
+  --border:rgba(37,196,168,0.18);--border2:rgba(37,196,168,0.38);
+  --serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body,#root{margin:0;min-height:100%}
+body{margin:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes glowpulse{0%,100%{opacity:.5}50%{opacity:.9}}
+::-webkit-scrollbar{width:7px;height:7px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(37,196,168,0.2);border-radius:4px}
